@@ -2,6 +2,7 @@
 
 ##Pseudocode for a swap
 
+
 '''python
 
 BEGIN
@@ -16,6 +17,7 @@ END
 '''
 
 ##Pseudocode for bubble sort
+
 
 '''python
 BEGIN
