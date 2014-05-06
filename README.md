@@ -2,7 +2,7 @@
 
 ##Pseudocode for a swap
 
-'''
+'''python
 BEGIN
 INPUT list, index of item to swap
 SET a to index'th item in list
