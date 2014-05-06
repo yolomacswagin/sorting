@@ -1,5 +1,7 @@
 #Sorting
 
+This ia a model set of answers for the sorting unit.  refer to http://ams-ict.github.io/GCSEcomputing/u2.html
+
 ##Pseudocode for a swap
 
 
