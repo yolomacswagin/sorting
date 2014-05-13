@@ -11,14 +11,21 @@ Sorting is a common activity.  We often need to sort things in an order to make 
 
 ```
 BEGIN
-INPUT list, index of item to swap
+INPUT alist, index of item to swap
 SET a to index'th item in list
 SET b to (index+1)th item in list
 SET (index)th item in list to b
 SET (index +1 )th item in list to a
-OUTPUT list
+OUTPUT alist
 END
 ```
+
+Variables used | type | discussion
+----|----|----
+alist | a list of integers or floats| this list is the input, and it is also the out put once the swap has taken place.
+index | integer |  this is the position of the item in the list to be swapped
+a | Integer | This is a temporary variable which stores the first item to be swapped, at index in the list
+b | Integer | This is a temporary variable which stores the second item to be swapped
 
 ###Pseudocode for bubble sort
 
@@ -36,6 +43,11 @@ WHILE swaps is True:
 OUTPUT alist
 END
 ```
+Variables used | type
+----|----
+alist | a list of integers or floats
+swaps | Boolean
+
 ### pseudocode for  finding the minimum (mini())
 ```
 BEGIN
@@ -71,3 +83,16 @@ example input|Expected output
 [4,3,2,1], 1 | [4,2,3,1]
 [4,3,2,1], 0 | [3,4,2,1]
 [1,2], 0 | [2,1]
+
+### Finding the minimum
+
+
+### Sorting criteria
+For the swap functions the input should be an unsorted list, and the output should be a sorted list.
+These tests apply equally to the bubble sort and selection sort functions.
+
+example input | Example output
+----|----
+[4,3,2,1] | [1,2,3,4]
+[1,2,3,4] | [1,2,3,4]
+[3,7,1] | [1,3,7]
