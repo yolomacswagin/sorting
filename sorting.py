@@ -5,7 +5,7 @@ def swap(alist, index):
     The function takes a list and an index as inputs, and out outputs a list with two items swapped
     '''
     a = alist[index] # sets the variable and puts the indexth item of alist into it.
-    b = alist[index+1]
+    b = alist[index+1]# sets the variable and puts the indexth item of blist into it 
     alist[index] = b
     alist[index+1] = a
     return (alist)
