@@ -69,8 +69,5 @@ it returns the list with the indexed item swapped with its next item.
 example input|Expected output
 ----|----
 [4,3,2,1], 1 | [4,2,3,1]
-----
 [4,3,2,1], 0 | [3,4,2,1]
-----
 [1,2], 0 | [2,1]
-----
