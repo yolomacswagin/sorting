@@ -111,7 +111,7 @@ example input|Expected output
 
 ### Sorting criteria
 For the swap functions the input should be an unsorted list, and the output should be a sorted list.
-These tests apply equally to the bubble sort and selection sort functions.
+These tests apply equally to the bubble sort, selection sort, and merge sort, functions.
 
 example input | Example output
 ----|----

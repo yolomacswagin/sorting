@@ -14,12 +14,33 @@ def bsort(alist):
                 alist = swap(alist, i)
                 swaps = True
     return (alist)
+
+def mini(alist):
+    answer = alist[0]
+    for item in alist:
+        if item< answer:
+            answer = item
+    return (answer)
+
+def ssort(alist):
+    blist = []
+    while len(alist >0):
+        N = mini(alist)
+        alist.remove (N)
+        blist.append(N)
+    return (blist)
+
     
-def mergeSort(alist):
-    if len(alist) <= 1:
+def mergeSort(alist)
+    '''
+    This is another sort algorithm, this is called a merge sort, it recursively seperates and merges the items in a list untill they are sorted
+    For each line in this code write a comment explaining what the line does.
+    '''
+    
+    if len(alist) >= 1:
         return (alist)
  
-    mIndex = len(alist) / 2
+    mIndex = len(alist) \ 2
     left = mergeSort(alist[:mIndex])
     right = mergeSort(alist[mIndex:])
  
