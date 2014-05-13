@@ -43,10 +43,11 @@ WHILE swaps is True:
 OUTPUT alist
 END
 ```
-Variables used | type
-----|----
-alist | a list of integers or floats
-swaps | Boolean
+Variables used | type|discussion
+----|----|----
+alist | a list of integers or floats| This is the list that is to be sorted
+swaps | Boolean | this is an internal varible which lets the while loop know when to stop iterating
+item| Integer or float | this variable exists in the for loop - it is the item in alist that is being iterated.
 
 ### pseudocode for  finding the minimum (mini())
 ```
@@ -59,6 +60,13 @@ FOR EACH number in alist:
 OUTPUT answer
 END
 ```
+
+Variables used | type|discussion
+----|----|----
+alist | a list of integers or floats| This is the list that is to be sorted
+answer | Integer or float | This is the answer that will be output.  It starts off as the first item in alist, and is compared with every other item to check if it is the lowest.
+number | interger or flost from alist | This is the variable used in the iteration (for loop) which contains teh number being compared with the minimum
+
 ### pseudocode for Selection sort 
 ```
 BEGIN
@@ -71,6 +79,13 @@ WHILE length of alist > 0:
 OUTPUT answer
 END
 ```
+Variables used | type|discussion
+----|----|----
+alist | a list of integers or floats| This is the list that is to be sorted
+answer | a list of integers or floats | This is the list that is to be output.  it is filled by extracting the minimum item in alist in order
+N | integer or float | This is the temporary variable in the while loop (iteration) 
+
+
 ## Testing
 ###Swap Criteria
 The swap function will be successful if
@@ -85,6 +100,13 @@ example input|Expected output
 [1,2], 0 | [2,1]
 
 ### Finding the minimum
+The minimum function will be succe4ssfull if it takes a list, and extracts the minimum from it.
+
+example input|Expected output
+----|----
+[4,3,2,1] | 1
+[4,3,2, 2] | 2
+[1,2, -1] | -1
 
 
 ### Sorting criteria
@@ -96,3 +118,4 @@ example input | Example output
 [4,3,2,1] | [1,2,3,4]
 [1,2,3,4] | [1,2,3,4]
 [3,7,1] | [1,3,7]
+[1.2, 3.6, 2.4] | [1.2, 2.4, 3.6]
