@@ -6,8 +6,8 @@ def swap(alist, index):
     '''
     a = alist[index] # sets the variable and puts the indexth item of alist into it.
     b = alist[index+1]# sets the variable and puts the indexth item of blist into it 
-    alist[index] = b
-    alist[index+1] = a
+    alist[index] = b  # alists indexth item equals b 
+    alist[index+1] = a  # alists indexth item equals a
     return (alist)
 
 def bsort(alist):
